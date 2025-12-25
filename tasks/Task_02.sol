@@ -10,4 +10,12 @@ contract Task_02 {
    function addToDynamicArray(uint _value) external {
        dynamicArray.push(_value); // Добавление элемента в динамический массив
    }
+
+   function generateSquares(uint256 n) public pure returns (uint256[] memory) {
+        uint256[] memory squares = new uint256[](n);
+        for (uint256 i = 0; i < n; i++) {
+            squares[i] = (i + 1) * (i + 1);
+        }
+        return squares;
+    }
 }

@@ -19,4 +19,8 @@ contract Task_12 {
    function multiply(uint256 _value) public pure returns (uint256) {
        return _value * 2;
    }
+
+   function multiplyByThree(uint256 _value) public pure returns (uint256) {
+        return _value * 3;
+    }
 }
